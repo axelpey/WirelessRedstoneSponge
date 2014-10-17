@@ -1,4 +1,4 @@
-package net.licks92.wirelessredstone.network.output;
+package net.licks92.wirelessredstone.network.io;
 
 
 public class InvertedOutputBehaviour implements OutputBehaviour {

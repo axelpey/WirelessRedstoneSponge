@@ -1,4 +1,7 @@
-package net.licks92.wirelessredstone.network.output;
+package net.licks92.wirelessredstone.network.io;
+
+import net.licks92.wirelessredstone.network.io.InvertedOutputBehaviour;
+import net.licks92.wirelessredstone.network.io.OutputBehaviour;
 
 import org.jmock.Expectations;
 import org.jmock.Mockery;

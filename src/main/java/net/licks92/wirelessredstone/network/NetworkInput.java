@@ -1,5 +1,6 @@
 package net.licks92.wirelessredstone.network;
 
+import net.licks92.wirelessredstone.network.io.InputSource;
 import net.licks92.wirelessredstone.util.Position;
 
 /**
@@ -7,8 +8,11 @@ import net.licks92.wirelessredstone.util.Position;
  */
 public abstract class NetworkInput extends NetworkElement {
 
-    public NetworkInput(Position pos) {
+    private InputSource source;
+
+    public NetworkInput(Position pos, InputSource input) {
         super(pos);
+        this.source = input;
     }
 
     /**
@@ -16,6 +20,6 @@ public abstract class NetworkInput extends NetworkElement {
      * @return true if a signal should be broadcast to the channel
      */
     public boolean hasInputSignal() {
-        return false; // TODO Implementation
+        return this.source.hasInputSignal();
     }
 }

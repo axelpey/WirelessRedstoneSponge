@@ -1,6 +1,6 @@
 package net.licks92.wirelessredstone.network;
 
-import net.licks92.wirelessredstone.network.output.OutputBehaviour;
+import net.licks92.wirelessredstone.network.io.OutputBehaviour;
 import net.licks92.wirelessredstone.util.Position;
 
 /**
