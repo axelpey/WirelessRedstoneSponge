@@ -10,6 +10,10 @@ public class WirelessChannel {
     
     private Set<NetworkInput> inputs = new HashSet<NetworkInput>();
     private Set<NetworkOutput> outputs = new HashSet<NetworkOutput>();
+    
+    public WirelessChannel(String name) {
+        this.name = name;
+    }
 
     /**
      * Get the channel's name.

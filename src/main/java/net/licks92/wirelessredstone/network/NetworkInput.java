@@ -6,7 +6,7 @@ import net.licks92.wirelessredstone.util.Position;
 /**
  * A generic input element
  */
-public abstract class NetworkInput extends NetworkElement {
+public class NetworkInput extends NetworkElement {
 
     private InputSource source;
 

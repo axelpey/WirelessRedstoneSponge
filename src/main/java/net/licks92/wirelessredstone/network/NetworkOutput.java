@@ -6,7 +6,7 @@ import net.licks92.wirelessredstone.util.Position;
 /**
  * A generic output element
  */
-public abstract class NetworkOutput extends NetworkElement {
+public class NetworkOutput extends NetworkElement {
     
     private OutputBehaviour output;
     private boolean isActive;
