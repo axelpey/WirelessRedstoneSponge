@@ -84,9 +84,7 @@ public class WirelessChannel {
     public void update() {
         this.isActive = this.hasInputSignal();
         for (NetworkOutput output : this.outputs) {
-            if (output.isActive() == this.isActive) {
-                output.setIsActive(this.isActive);
-            }
+            output.setIsActive(this.isActive);
         }
     }
     
