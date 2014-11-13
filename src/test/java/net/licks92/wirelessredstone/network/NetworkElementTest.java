@@ -18,5 +18,13 @@ public class NetworkElementTest {
     public void testCannotPassNullToConstructor() {
         new NetworkElement(null);
     }
+    
+    @Test
+    public void testSetGetChannel() {
+        WirelessChannel channel = new WirelessChannel("testchannel");
+        NetworkElement element = new NetworkElement(new Position(12,12,12, "world"));
+        element.setChannel(channel);
+        assertSame(channel, element.getChannel());
+    }
 
 }

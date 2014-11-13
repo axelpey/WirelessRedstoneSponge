@@ -73,6 +73,7 @@ public class WirelessChannel {
         } else {
             throw new IllegalArgumentException();
         }
+        element.setChannel(this);
         this.update();
     }
     

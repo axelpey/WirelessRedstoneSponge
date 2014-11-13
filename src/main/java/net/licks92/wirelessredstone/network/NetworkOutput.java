@@ -24,7 +24,15 @@ public class NetworkOutput extends NetworkElement {
     }
     
     /**
-     * Updates the Activation status of this element
+     * Updates the Activation status of this element.
+     *
+     * <p>If the state is switched on (changing from {@code false} to {@code true}), the
+     * {@link OutputBehaviour#activate()} method of the underlying Outputbehaviour will be called </p>
+     * 
+     * <p>If the state is switched off (changing from {@code true} to {@code false}), the
+     * {@link OutputBehaviour#deactivate()} method of the underlying OutputBehaviour will be called</p>
+     * 
+     * <p>No calls will be made if the NetworkOutputs activation status does not change.</p>
      */
     public void setIsActive(boolean status) {
         if (status != this.isActive) {

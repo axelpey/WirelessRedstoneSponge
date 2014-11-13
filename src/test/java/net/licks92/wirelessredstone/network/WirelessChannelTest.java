@@ -104,4 +104,11 @@ public class WirelessChannelTest {
         assertTrue(this.channel.isActive());
     }
     
+    @Test
+    public void testChannelPassesReferenceToElementWhenItsAdded() {
+        assertNull(this.activatedInput.getChannel());
+        this.channel.addElement(this.activatedInput);
+        assertSame(this.channel, this.activatedInput.getChannel());
+    }
+    
 }
